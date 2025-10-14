@@ -20,7 +20,7 @@ export const arrayPorto: PortofolioItem[] = [
   {
     id: 2,
     name: "Bakery shopping application",
-    image:
+    image:    
 
     
       "https://i.pinimg.com/564x/56/07/51/56075169f3befff95331d31bce2dd121.jpg",
