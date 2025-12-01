@@ -1,23 +1,57 @@
-const PostPage = () => {
-  return (
-    <div>
-      {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center h-screen bg-blue-200">
-        <div className="flex flex-row items-center justify-center gap-10">
-          <img
-            src="https://i.pinimg.com/736x/dc/14/91/dc1491d3f5fa357926c873be8036943c.jpg" 
-            alt="Foto Ezraaa"
-            className="w-64 h-64 rounded-full object-cover shadow-lg"
-          />
+"use client";
 
-          <div className="text-center">
-            <h1 className="text-5xl font-bold mb-4">Halo, Aku Raihanah</h1>
-            <p className="text-lg mb-6">Frontend Developer | RPL 6 kece</p>
-          </div>
-        </div>
-      </section>
+import {
+  ButtonSuccess,
+  ButtonWarning,
+  ButtonDanger,
+  OutLineSuccess,
+  OutLineWarning,
+  OutLineDanger,
+} from "../../components/buttom";
+
+const TestButton = () => {
+  return (
+    <div className="m-10 p-10">
+      <ButtonSuccess
+        type="button"
+        onClick={() => alert("Success button clicked!")}
+      >
+        Success Button
+      </ButtonSuccess>
+      <ButtonWarning
+        type="button"
+        className="ml-2"
+        onClick={() => alert("Warning button clicked!")}
+      >
+        Warning Button
+      </ButtonWarning>
+      <ButtonDanger
+        type="button"
+        className="ml-2"
+        onClick={() => alert("Danger button clicked!")}
+      >
+        Danger Button
+      </ButtonDanger>
+      <OutLineSuccess
+        type="button"
+        onClick={() => alert("Success button clicked!")}
+      >
+        Success Outline Button
+      </OutLineSuccess>
+      <OutLineWarning
+        type="button"
+        onClick={() => alert("Warning button clicked!")}
+      >
+        Warning Outline Button
+      </OutLineWarning>
+      <OutLineDanger
+        type="button"
+        onClick={() => alert("Warning button clicked!")}
+      >
+        Danger Outline Button
+      </OutLineDanger>
     </div>
   );
 };
 
-export default PostPage;
+export default TestButton;
